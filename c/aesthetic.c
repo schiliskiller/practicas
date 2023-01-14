@@ -4,7 +4,7 @@
 
 int main() {
     int i = 1, n;
-    char chr, a[20];
+    char chr, a[20] = {0};
 
     while (1) {
         printf("\nEscribe algo (20 caracteres minimo): ");
