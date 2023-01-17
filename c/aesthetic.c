@@ -4,14 +4,14 @@
 
 int main() {
     int i = 1, n;
-    char chr, a[20] = {0};
+    char chr, a[50] = {0};
 
     while (1) {
-        printf("\nEscribe algo (20 caracteres minimo): ");
+        printf("\nEscribe algo (50 caracteres minimo): ");
         for (n = 0, chr = getchar(); chr != '\n'; i++, n++, chr = getchar())
             a[n] = chr;
         if (i > N) {
-            printf("Maximo 20 caracteres. Ingreso %d caracteres.\n", i);
+            printf("Maximo 50 caracteres. Ingreso %d caracteres.\n", i);
             printf("Intentelo de nuevo.\n");
             for (n = 0; n < N; n++)
                 a[n] = 0;
