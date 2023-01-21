@@ -10,6 +10,7 @@ int main() {
     printf("%d\n", n);
     return 0;
   }
+
   for (i = 0; i < N; i++) {
     digits[i] = n % 10;
     if (digits[i])
@@ -21,9 +22,8 @@ int main() {
         digits[i] = 0;
       }
       i = 0;
-      if (j == 1) {
+      if (j == 1)
         break;
-      }
       j = 0;
       n = sum;
       continue;
